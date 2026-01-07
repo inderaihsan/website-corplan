@@ -50,25 +50,28 @@ function Gallery() {
   }, [currentIndex]);
 
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden">
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-black">
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-violet-300 via-blue-300 to-blue-50 overflow-hidden">
-        <div className="absolute inset-0 bg-blue-200 opacity-20" />
+      <section className="relative min-h-screen w-full flex items-center justify-center bg-black overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30" />
 
-        <div ref={heroRef} className="container mx-auto px-5 py-32 relative z-10">
+        <div
+          ref={heroRef}
+          className="container mx-auto px-5 py-32 relative z-10"
+        >
           <AnimatedTitle
             title="Gallery Event"
             containerClass="text-center mb-8"
           />
-          <p className="text-center text-blue-50 mt-5 text-xl max-w-2xl mx-auto mb-12">
+          <p className="text-center text-gray-300 mt-5 text-xl max-w-2xl mx-auto mb-12 font-light tracking-wide">
             Dokumentasi Corporate Planning KJPP RHR 2026
           </p>
 
           {/* Slideshow Container */}
           <div className="max-w-5xl mx-auto">
-            <div className="relative aspect-[16/10] bg-blue-200 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-[16/10] bg-gray-900 rounded-lg overflow-hidden shadow-2xl border border-gray-800">
               <img
                 ref={imageRef}
                 key={currentIndex}
@@ -78,8 +81,8 @@ function Gallery() {
               />
 
               {/* Image Counter */}
-              <div className="absolute top-4 right-4 bg-blue-200/80 text-blue-50 px-4 py-2 rounded-full backdrop-blur-sm">
-                <span className="font-bold">
+              <div className="absolute top-4 right-4 bg-black/70 text-white px-4 py-2 rounded backdrop-blur-sm border border-gray-700">
+                <span className="font-light tracking-wider text-sm">
                   {currentIndex + 1} / {galleryImages.length}
                 </span>
               </div>
@@ -93,8 +96,8 @@ function Gallery() {
                   onClick={() => setCurrentIndex(index)}
                   className={`transition-all duration-300 rounded-full ${
                     index === currentIndex
-                      ? "w-12 h-3 bg-violet-300"
-                      : "w-3 h-3 bg-blue-100 hover:bg-blue-300"
+                      ? "w-12 h-3 bg-white"
+                      : "w-3 h-3 bg-gray-600 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to image ${index + 1}`}
                 />
@@ -102,7 +105,7 @@ function Gallery() {
             </div>
 
             {/* Auto-play indicator */}
-            <p className="text-center text-blue-50 mt-6 text-sm">
+            <p className="text-center text-gray-500 mt-6 text-sm font-light tracking-wide">
               Auto-playing every 5 seconds
             </p>
           </div>
