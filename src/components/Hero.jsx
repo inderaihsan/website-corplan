@@ -42,11 +42,19 @@ const Hero = () => {
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-16 sm:mt-20 md:mt-24 px-4 sm:px-6 md:px-10">
             <h1 className="special-font hero-heading text-blue-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-              CORPORATE PLA<b>N</b>NING
+              <span className="bg-black/90 px-2 py-1">
+                CORPORATE PLA<b>N</b>NING
+              </span>
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100 text-sm sm:text-base md:text-lg">
-              Rooted Responsibility, <br /> Flourishing Transformation
+              <span className="bg-black/90 px-2 py-1 inline-block">
+                Rooted Responsibility,
+              </span>
+              <br />
+              <span className="bg-black/90 px-2 py-1 inline-block mt-1">
+                Flourishing Transformation
+              </span>
             </p>
           </div>
         </div>

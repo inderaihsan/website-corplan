@@ -81,51 +81,44 @@ const Features = () => (
   <section className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-16 md:py-32">
-        <p className="font-circular-web text-base md:text-lg text-blue-50">
-          Into the Metagame Layer
-        </p>
-        <p className="max-w-md font-circular-web text-sm md:text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
-        </p>
+        <h3 className="font-circular-web text-base md:text-lg text-blue-50">
+          "Pertumbuhan kita bukan hanya soal angka, tapi tanggung jawab. Melalui
+          setiap tindakan kecil, kita membangun dampak yang tak terhapuskan bagi
+          industri dan masyarakat"
+        </h3>
       </div>
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="videos/feature-1.mp4"
-          title={
-            <>
-              TOPI<b>C</b>
-            </>
-          }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          src="videos/solo.mp4"
+          title={<>TOPIC</>}
+          description=""
           isComingSoon
         />
       </BentoTilt>
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="videos/feature-2.mp4"
+          src="videos/solo2.mp4"
           title={
             <>
               OBJECTI<b>V</b>E
             </>
           }
-          description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+          description=""
           isComingSoon
         />
       </BentoTilt>
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="videos/feature-3.mp4"
+          src="videos/solo3.mp4"
           title={
             <>
               FOCU<b>S</b>
             </>
           }
-          description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+          description=""
           isComingSoon
         />
       </BentoTilt>
