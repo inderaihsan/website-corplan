@@ -7,50 +7,76 @@ import AnimatedTitle from "../components/AnimatedTitle";
 const papers = [
   {
     id: 1,
-    title: "Sustainable Office Practices for Modern Consulting Firms",
-    author: "John Doe",
+    title: "Sustainability dalam hubungan dengan metode dan teknik penilaian",
+    author: "Halim Rusli , Kantor Pusat",
     image: "/img/papers/paper1.jpg",
-    driveLink: "https://drive.google.com/file/d/example1",
+    driveLink:
+      "https://drive.google.com/file/d/1uwWlD8Yu6v0oQd_rOxngrymbdZIY2i3o/view?usp=drive_link",
     description: "Exploring eco-friendly practices in corporate environments",
   },
   {
     id: 2,
-    title: "Carbon Footprint Reduction Strategies",
-    author: "Jane Smith",
+    title: "Sustainability dalam kegiatan Perkantoran dan Kepegawaian RHR",
+    author: "Pamela Ribka, Kantor Pusat",
     image: "/img/papers/paper2.jpg",
-    driveLink: "https://drive.google.com/file/d/example2",
+    driveLink:
+      "https://docs.google.com/presentation/d/1NfPiHB_Bef4E589rL2WdajzC9bBaqdpT/edit?usp=drive_link&ouid=112233642586268936798&rtpof=true&sd=true",
     description: "A comprehensive analysis of emission reduction methods",
   },
   {
     id: 3,
-    title: "Green Technology Integration in Audit Processes",
-    author: "Michael Chen",
+    title: "Sustainability dalam hubungan dengan metode dan teknik penilaian",
+    author: "Nurul Hidayat, Kantor Cabang Medan",
     image: "/img/papers/paper3.jpg",
-    driveLink: "https://drive.google.com/file/d/example3",
+    driveLink:
+      "https://docs.google.com/presentation/d/1n9FC4CnYfwIkJWNBRfqnE-vkf4xP4qQv/edit?usp=drive_link&ouid=112233642586268936798&rtpof=true&sd=true",
     description: "Leveraging technology for sustainable business practices",
   },
   {
     id: 4,
-    title: "Environmental Impact Assessment Framework",
-    author: "Sarah Williams",
+    title: "Sustainability Kepegawaian dan Perkantoran",
+    author: "Subarno, Kantor Cabang Yogyakarta",
     image: "/img/papers/paper4.jpg",
-    driveLink: "https://drive.google.com/file/d/example4",
+    driveLink:
+      "https://docs.google.com/presentation/d/1z1yQJK_tl63X7jDIInUnYU2Pe1GjlCOt/edit?usp=drive_link&ouid=112233642586268936798&rtpof=true&sd=true",
     description: "Developing robust assessment methodologies",
   },
   {
     id: 5,
-    title: "Circular Economy Principles in Professional Services",
-    author: "David Brown",
+    title: "Sustainability Dalam Hubungan Dengan Metode Dan Teknik Penilaian",
+    author: "Jamaluddin Al Afgani, Kantor Cabang Makassar",
     image: "/img/papers/paper5.jpg",
-    driveLink: "https://drive.google.com/file/d/example5",
+    driveLink:
+      "https://docs.google.com/presentation/d/1MxJizcMrIMkA9_764n1ptkphOip1loJc/edit?usp=drive_link&ouid=112233642586268936798&rtpof=true&sd=true",
     description: "Implementing circular economy concepts",
   },
   {
     id: 6,
-    title: "Renewable Energy Adoption in Corporate Settings",
-    author: "Emily Davis",
+    title: "Sustainability dalam hubungan efisiensi anggaran",
+    author: "Henry Setyawan Oktavianus, Kantor Cabang Surabaya",
     image: "/img/papers/paper6.jpg",
-    driveLink: "https://drive.google.com/file/d/example6",
+    driveLink:
+      "https://drive.google.com/file/d/1Tdz1uAf_eBPhN_2kBlhwsr9UWGPhsa4b/view?usp=drive_link",
+    description: "Transitioning to sustainable energy sources",
+  },
+  {
+    id: 7,
+    title:
+      "Sustainability dalam hubungan dengan proses dalam pelaksanaan penilaian",
+    author: "Nurmiyanti, Kantor Cabang Semarang",
+    image: "/img/papers/paper6.jpg",
+    driveLink:
+      "https://docs.google.com/presentation/d/17xRYGCA5ZBkQFnUqG7uopfUn7ow5Gnbp/edit?usp=drive_link&ouid=112233642586268936798&rtpof=true&sd=true",
+    description: "Transitioning to sustainable energy sources",
+  },
+  {
+    id: 8,
+    title:
+      "Sustainability dalam hubungan dengan proses dalam pelaksanaan penilaian",
+    author: "Eni Sumansari N, Kantor Cabang Bandung",
+    image: "/img/papers/paper6.jpg",
+    driveLink:
+      "https://docs.google.com/presentation/d/17CbEd-i0tdtqXjDdtTnunhmnn0PQ7cRx/edit?usp=drive_link&ouid=112233642586268936798&rtpof=true&sd=true",
     description: "Transitioning to sustainable energy sources",
   },
 ];
@@ -110,9 +136,9 @@ function RHRGreenIdea() {
                     by {paper.author}
                   </p>
 
-                  <p className="text-gray-500 text-sm font-light leading-relaxed mb-6 line-clamp-2">
+                  {/* <p className="text-gray-500 text-sm font-light leading-relaxed mb-6 line-clamp-2">
                     {paper.description}
-                  </p>
+                  </p> */}
 
                   {/* Access Button */}
                   <a
