@@ -9,6 +9,7 @@ import Button from "./Button";
 
 const navItems = [
   { name: "Rundown Kegiatan", path: "/rundown-kegiatan" },
+  { name: "Daftar Peserta", path: "/participant" },
   { name: "Gallery", path: "/gallery" },
   { name: "RHR Green Idea", path: "/rhr-green-idea" },
 ];
